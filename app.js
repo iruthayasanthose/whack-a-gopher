@@ -5,13 +5,12 @@ let score = 0;
 
 var objs = new Array("assets/gopher.png", "assets/bomb.png");
 
-const sound = new Audio("assets/smash.mp3");
+const smash = new Audio("assets/smash.mp3");
+const explode = new Audio("assets/explode.wav");
 
 function gameOver() {
-  // const bombBlast =
-
-  document.getElementById("game").style.filter = "blur(50px)";
-  document.getElementById("game").style.backdropFilter = "blur(50px)";
+  document.getElementById("game").style.filter = "blur(100px)";
+  document.getElementById("game").style.backdropFilter = "blur(100px)";
 
   document.getElementById("homebtns").style.filter = "blur(50px)";
   document.getElementById("homebtns").style.backdropFilter = "blur(50px)";
@@ -22,8 +21,6 @@ function gameOver() {
   document.getElementById("gameover").style.top = "30%";
   document.getElementById("gameover").style.left = "50%";
   document.getElementById("gameover").style.transform = "translate(-50%, 0)";
-
-  // bombBlast =
 }
 
 function peep() {
@@ -42,13 +39,13 @@ function peep() {
   img.addEventListener("click", () => {
     if (obj[randN] == obj[0]) {
       score += 10;
-      sound.play();
+      smash.play();
       scoreEl.textContent = score;
       img.src = "assets/dead_gopher.png";
     }
     if (obj[randN] == obj[1]) {
       score = 0;
-      sound.play();
+      explode.play();
       scoreEl.textContent = score;
       img.src = "assets/explode.png";
 
@@ -72,7 +69,10 @@ function peep() {
 function startGame() {
   peep();
 }
-
+function resetGame() {
+  window.location.reload();
+  return false;
+}
 // HAmmer Code
 // window.addEventListener("mousemove", (e) => {
 //   cursor.style.top = e.pageY + "px";
@@ -84,8 +84,3 @@ function startGame() {
 // window.addEventListener("mouseup", () => {
 //   cursor.classList.remove("active");
 // });
-
-function resetGame() {
-  window.location.reload();
-  return false;
-}
