@@ -18,7 +18,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 10rem;
+  font-size: 6rem;
   line-height: 1;
   margin-bottom: 0;
 }
@@ -30,43 +30,14 @@ h1 {
   border-radius: 1rem;
 }
 
-/* CSS */
-.button {
-  background-color: #c2fbd7;
-  border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
-    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
-    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
-    rgba(44, 187, 99, 0.15) 0 16px 32px;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 250ms;
-  border: 0;
-  font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button:hover {
-  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
-    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
-    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
-    rgba(44, 187, 99, 0.25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
-}
-
 .game {
+  /* border: 1px red solid; */
   width: 600px;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  position: relative;
 }
 
 .hole {
@@ -104,7 +75,74 @@ h1 {
   }
 }
 
-.cursor {
+/* CSS */
+.buttons {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1% auto;
+}
+.button {
+  background-color: transparent;
+  border-radius: 5px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  margin: auto 1%;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 1px solid #000000;
+  font-size: 2rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.gameover {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  width: 400px;
+  height: 225px;
+  background-color: transparent;
+  padding: 5px auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gameover .heading h1 {
+  margin: 2.5% auto;
+  padding: 0;
+  font-size: 5rem;
+}
+.gameover .heading h6 {
+  text-align: center;
+  margin: 1% auto;
+  padding: 0;
+  font-size: 3rem;
+}
+.social-result-shares {
+  display: flex;
+  justify-content: space-around;
+}
+.social-result-shares img {
+  width: 50px;
+  height: 50px;
+}
+.gameover .buttons {
+  margin: 2.5% auto;
+}
+
+/* Hammer Code */
+/* .game .cursor {
   height: 110px;
   width: 100px;
   position: absolute;
@@ -120,4 +158,4 @@ h1 {
 
 .cursor.active {
   transform: translate(-20%, -20%) rotate(-45deg);
-}
+} */

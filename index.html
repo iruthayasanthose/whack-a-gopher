@@ -12,18 +12,66 @@
   </head>
   <body>
     <h1>Whack-a-mole! <span class="score">0</span></h1>
-    <button class="button" onClick="startGame()">Start!</button>
-    <button class="button" onClick="resetGame()">Reset</button>
+    <div id="game" class="game">
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <!-- <div class="cursor"></div> -->
+      <!-- <div id="gameover" class="gameover" style="display: none">
+        <div class="heading">
+          <h1>Game Over!</h1>
+          <h6>Share your score on:</h6>
+        </div>
 
-    <div class="game">
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
+        <div class="social-result-shares">
+          <a href="#"><img src="/assets/icons/twitter.png" alt="Twitter" /></a>
+          <a href="#"
+            ><img src="/assets/icons/facebook.png" alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img src="/assets/icons/whatsapp.png" alt="WhatsApp"
+          /></a>
+          <a href="#"
+            ><img src="/assets/icons/instagram.png" alt="Instagram"
+          /></a>
+        </div>
+        <div class="buttons">
+          <button class="button button-og" onClick="startGame()">Start!</button>
+          <button class="button button-og" onClick="resetGame()">Reset</button>
+        </div>
+      </div> -->
     </div>
-    <div class="cursor"></div>
+    <div id="gameover" class="gameover" style="display: none">
+      <div class="heading">
+        <h1>Game Over!</h1>
+        <h6>Share your score on:</h6>
+      </div>
+
+      <div class="social-result-shares">
+        <a href="#"><img src="/assets/icons/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="/assets/icons/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="/assets/icons/whatsapp.png" alt="WhatsApp" /></a>
+        <a href="#"
+          ><img src="/assets/icons/instagram.png" alt="Instagram"
+        /></a>
+      </div>
+      <div class="buttons">
+        <button class="button button-og" onClick="resetGame()">
+          ¡Restart!
+        </button>
+      </div>
+    </div>
+    <div id="homebtns" class="buttons">
+      <button class="button button-og" onClick="startGame()">Start!</button>
+      <button class="button button-og" onClick="resetGame()">Reset</button>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
