@@ -160,7 +160,7 @@ h1 {
   transform: translate(-20%, -20%) rotate(-45deg);
 } */
 
-@media screen and (max-width: 478px) {
+@media only screen and (min-width: 768px) {
   h1 {
     font-size: 15rem;
     line-height: 2;
