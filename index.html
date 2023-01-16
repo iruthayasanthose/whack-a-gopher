@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Whack A Mole!</title>
+    <title>Whack A Gopher!</title>
     <link
       href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700"
       rel="stylesheet"
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Whack-a-mole! <span class="score">0</span></h1>
+    <h1>Whack-A-Gopher! <span class="score">0</span></h1>
     <div id="game" class="game">
       <div class="hole"></div>
       <div class="hole"></div>
@@ -54,12 +54,14 @@
       </div>
 
       <div class="social-result-shares">
-        <a href="#"><img src="/assets/icons/twitter.png" alt="Twitter" /></a>
-        <a href="#"><img src="/assets/icons/facebook.png" alt="Facebook" /></a>
+        <a href="#" onClick="shareOntwitter()"
+          ><img src="/assets/icons/twitter.png" alt="Twitter"
+        /></a>
+        <!-- <a href="#"><img src="/assets/icons/facebook.png" alt="Facebook" /></a>
         <a href="#"><img src="/assets/icons/whatsapp.png" alt="WhatsApp" /></a>
         <a href="#"
           ><img src="/assets/icons/instagram.png" alt="Instagram"
-        /></a>
+        /></a> -->
       </div>
       <div class="buttons">
         <button class="button button-og" onClick="resetGame()">
