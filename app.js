@@ -89,7 +89,7 @@ function shareOntwitter() {
   var url =
     "https://twitter.com/intent/tweet?via=webilo&text=Scored%20" +
     score +
-    "%20in%20Whack%20a%20Gopher%20%23Day%201/7.%20%0A%F0%9F%9F%A8%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%0APlay%20here%3A%20https%3A//whackagopher.netilify.app%0A%0A&hashtags=whackagopher%20%23arcade%20%23onlinegame%20%23game%20%23games%20%23universal";
+    "%20points%20in%20Whack%20a%20Gopher%20%23Day%201/7.%20%0A%F0%9F%9F%A8%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%0APlay%20here%3A%20https%3A//whackagopher.netilify.app%0A%0A&hashtags=whackagopher%20%23arcade%20%23onlinegame%20%23game%20%23games%20%23universal";
   TwitterWindow = window.open(url);
   return false;
 }
