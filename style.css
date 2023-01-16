@@ -9,14 +9,36 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
 body {
+  width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: "Amatic SC", cursive;
+  display: flex;
+  justify-content: center;
 }
-
-h1 {
+.adblock-one {
+  border: 1px red solid;
+  width: 25%;
+  flex-grow: 1;
+}
+.adblock-two {
+  border: 1px red solid;
+  width: 25%;
+  flex-grow: 1;
+}
+.ablock-three {
+  border: 1px blue solid;
+  width: 100%;
+  flex-grow: 10;
+}
+.mainblock {
+  border: 1px red solid;
+  width: 50%;
+  flex-grow: 8;
+}
+.mainblock h1 {
   text-align: center;
   font-size: 6rem;
   line-height: 1;
@@ -32,7 +54,7 @@ h1 {
 
 .game {
   /* border: 1px red solid; */
-  width: 600px;
+  width: 100%;
   height: 500px;
   display: flex;
   flex-wrap: wrap;
@@ -160,22 +182,36 @@ h1 {
   transform: translate(-20%, -20%) rotate(-45deg);
 } */
 
-@media screen and (max-width: 390px) {
+@media screen and (min-width: 490px) {
   body {
     height: 100%;
     max-width: 100%;
     width: 100%;
   }
-  h1 {
-    font-size: 105px;
-    line-height: 2;
+  .adblock-one {
+    width: 0%;
+    display: none;
+  }
+  .adblock-two {
+    width: 0%;
+    display: none;
+  }
+  .mainblock {
+    width: 100%;
+  }
+  .mainblock h1 {
+    font-size: 95px;
+    line-height: 1;
   }
   .game {
-    /* top: 20%; */
-    width: 100%;
-    height: 700px;
-    /* padding: 5px; */
+    height: 800px;
+    padding: 5px;
     margin: 0;
+  }
+  .hole:after {
+    display: block;
+    width: 100%;
+    height: 80px;
   }
   .buttons {
     margin: 5% auto;
