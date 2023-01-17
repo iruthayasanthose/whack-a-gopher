@@ -183,7 +183,7 @@ body {
   transform: translate(-20%, -20%) rotate(-45deg);
 } */
 
-@media (max-width: 490px) {
+@media screesn and (max-width: 490px) {
   body {
     height: 100%;
     max-width: 100%;
