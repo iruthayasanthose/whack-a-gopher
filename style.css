@@ -240,6 +240,7 @@ body {
   .gameover .heading h6 {
     margin: 1% auto;
     font-size: 3rem;
+    text-align: center;
   }
   .social-result-shares img {
     padding: 5px auto;
@@ -248,5 +249,10 @@ body {
   }
   .gameover .buttons {
     margin: 3% auto;
+  }
+  .gameover h6 {
+    margin: 1% auto;
+    font-size: 2rem;
+    text-align: center;
   }
 }
