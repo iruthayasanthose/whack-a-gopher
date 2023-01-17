@@ -36,6 +36,10 @@ function peep() {
   img.classList.add("obj");
   img.src = obj;
 
+  const min = 199;
+  const max = 400;
+  const randT = Math.floor(Math.random() * (max - min) + min);
+
   img.addEventListener("click", () => {
     if (obj[randN] == obj[0]) {
       score += 10;
@@ -54,7 +58,7 @@ function peep() {
     setTimeout(() => {
       hole.removeChild(img);
       peep();
-    }, 500);
+    }, randT); //changed
   });
 
   hole.appendChild(img);
@@ -62,7 +66,7 @@ function peep() {
   timer = setTimeout(() => {
     hole.removeChild(img);
     peep();
-  }, 1500);
+  }, 1007); //changed
 }
 
 function startGame() {
