@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <title>Whack A Gopher!</title>
     <link
       href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700"
@@ -10,6 +11,20 @@
       type="text/css"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5F62JFTH9V"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5F62JFTH9V");
+    </script>
   </head>
   <body>
     <div class="adblock-one"></div>
@@ -55,7 +70,42 @@
         <button class="button button-og" onClick="startGame()">Start!</button>
         <button class="button button-og" onClick="resetGame()">Reset</button>
       </div>
-      <div class="ablock-three"></div>
+      <div class="ablock-three">
+        <h5>How to play?(instructions):</h5>
+        <p>
+          For many years, players of all ages have delighted in the timeless
+          casual game Whack-a-Gopher. The goal of the game is to hammer as many
+          moles as you can; but, if you happen to hit the bomb, the game is
+          over. Moles and bombs randomly appear out of holes in a board that is
+          used to play the game. To hit the moles as they appear, players need
+          quick reflexes and good hand-eye coordination.
+        </p>
+
+        <p>
+          The player must wait for the moles to emerge from their holes as the
+          game begins with them hidden within. Once a mole appears, the player
+          must use the mallet to strike it fast before it retreats back into its
+          hole.The player receives 10+ points for each mole struck, and the game
+          is over when you unintentionally hit a bomb. The player with the most
+          points at the conclusion of the game week is declared the overall
+          champion, and the score should be posted on Twitter.
+        </p>
+
+        <p>
+          The simplicity of Whack-a-Gopher is one of its best features. Everyone
+          of any age or ability level can enjoy the game because it is simple to
+          learn and play. It is also very replayable because it is difficult to
+          predict when and where the moles and explosives will come because they
+          appear in different holes and at varied intervals.
+        </p>
+
+        <p>
+          In general, Whack-a-Gopher is a time-tested classic that has endured.
+          Its straightforward yet difficult gameplay makes it a game that
+          players of all ages and backgrounds may enjoy. It's a game that never
+          gets old and gives gamers all across the world hours of entertainment.
+        </p>
+      </div>
     </div>
     <div class="adblock-two"></div>
     <script src="app.js"></script>

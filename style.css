@@ -34,6 +34,12 @@ body {
   width: 100%;
   flex-grow: 10;
 }
+.ablock-three h5 {
+  font-size: 4rem;
+}
+.ablock-three p {
+  font-size: 3rem;
+}
 .mainblock {
   /* border: 1px red solid; */
   width: 50%;
@@ -254,5 +260,11 @@ body {
     margin: 1% auto;
     font-size: 2rem;
     text-align: center;
+  }
+  .ablock-three h5 {
+    font-size: 2rem;
+  }
+  .ablock-three p {
+    font-size: 1.5rem;
   }
 }

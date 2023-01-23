@@ -89,11 +89,70 @@ function resetGame() {
 //   cursor.classList.remove("active");
 // });
 
+var now = new Date(); // current date/time
+var hrs = now.getHours(); // 0 to 23
+var mins = now.getMinutes();
+var secs = now.getSeconds();
+
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+var day = weekday[now.getDay()];
+
 function shareOntwitter() {
-  var url =
-    "https://twitter.com/intent/tweet?via=webilo&text=Scored%20" +
-    score +
-    "%20points%20in%20Whack%20a%20Gopher%20%23Day%201/7.%20%0A%F0%9F%9F%A8%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%0APlay%20here%3A%20https%3A//whackagopher.netilify.app%0A%0A&hashtags=whackagopher%20%23arcade%20%23onlinegame%20%23game%20%23games%20%23universal";
-  TwitterWindow = window.open(url);
-  return false;
+  if (day == "Sunday") {
+    var url =
+      "https://twitter.com/intent/tweet?via=WebiloAgency&text=Scored%20" +
+      score +
+      "%20points%20in%20Whack%20a%20Gopher%20%23Day%201/7.%20%0A%F0%9F%9F%A8%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%0APlay%20here%3A%20https%3A//whackagopher.online%0A%0A&hashtags=whackagopher%20%23arcade%20%23casual%20%23onlinegame%20%23game%20%23games%20%23universal";
+    TwitterWindow = window.open(url);
+    return false;
+  } else if (day == "Monday") {
+    var url =
+      "https://twitter.com/intent/tweet?via=WebiloAgency&text=Scored%20" +
+      score +
+      "%20points%20in%20Whack%20a%20Gopher%20%23Day%202/7.%20%0A%E2%AC%9B%F0%9F%9F%A8%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%0APlay%20here%3A%20https%3A//whackagopher.online%0A%0A&hashtags=whackagopher%20%23arcade%20%23casual%20%23onlinegame%20%23game%20%23games%20%23universal";
+    TwitterWindow = window.open(url);
+    return false;
+  } else if (day == "Tuesday") {
+    var url =
+      "https://twitter.com/intent/tweet?via=WebiloAgency&text=Scored%20" +
+      score +
+      "%20points%20in%20Whack%20a%20Gopher%20%23Day%203/7.%20%0A%E2%AC%9B%E2%AC%9B%F0%9F%9F%A8%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%0APlay%20here%3A%20https%3A//whackagopher.online%0A%0A&hashtags=whackagopher%20%23arcade%20%23casual%20%23onlinegame%20%23game%20%23games%20%23universal";
+    TwitterWindow = window.open(url);
+    return false;
+  } else if (day == "Wednesday") {
+    var url =
+      "https://twitter.com/intent/tweet?via=WebiloAgency&text=Scored%20" +
+      score +
+      "%20points%20in%20Whack%20a%20Gopher%20%23Day%204/7.%20%0A%E2%AC%9B%E2%AC%9B%E2%AC%9B%F0%9F%9F%A8%E2%AC%9B%E2%AC%9B%E2%AC%9B%0APlay%20here%3A%20https%3A//whackagopher.online%0A%0A&hashtags=whackagopher%20%23arcade%20%23casual%20%23onlinegame%20%23game%20%23games%20%23universal";
+    TwitterWindow = window.open(url);
+    return false;
+  } else if (day == "Thursday") {
+    var url =
+      "https://twitter.com/intent/tweet?via=WebiloAgency&text=Scored%20" +
+      score +
+      "%20points%20in%20Whack%20a%20Gopher%20%23Day%205/7.%20%0A%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%F0%9F%9F%A8%E2%AC%9B%E2%AC%9B%0APlay%20here%3A%20https%3A//whackagopher.online%0A%0A&hashtags=whackagopher%20%23arcade%20%23casual%20%23onlinegame%20%23game%20%23games%20%23universal";
+    TwitterWindow = window.open(url);
+    return false;
+  } else if (day == "Friday") {
+    var url =
+      "https://twitter.com/intent/tweet?via=WebiloAgency&text=Scored%20" +
+      score +
+      "%20points%20in%20Whack%20a%20Gopher%20%23Day%206/7.%20%0A%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9%F0%9F%9F%A8B%E2%AC%9B%0APlay%20here%3A%20https%3A//whackagopher.online%0A%0A&hashtags=whackagopher%20%23arcade%20%23casual%20%23onlinegame%20%23game%20%23games%20%23universal";
+    TwitterWindow = window.open(url);
+    return false;
+  } else {
+    var url =
+      "https://twitter.com/intent/tweet?via=WebiloAgency&text=Scored%20" +
+      score +
+      "%20points%20in%20Whack%20a%20Gopher%20%23Day%207/7.%20%0A%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%E2%AC%9B%F0%9F%9F%A8%0APlay%20here%3A%20https%3A//whackagopher.online%0A%0A&hashtags=whackagopher%20%23arcade%20%23casual%20%23onlinegame%20%23game%20%23games%20%23universal";
+    TwitterWindow = window.open(url);
+    return false;
+  }
 }
